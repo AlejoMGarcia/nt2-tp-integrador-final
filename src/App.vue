@@ -1,28 +1,45 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container-fluid mt-2">
+    <div class="jumbotron">
+      <h1>Trabajo Integrados NT2</h1>
+      <hr>
+
+
+      <!-- <Loginform /> -->
+      <Accountstate />
+      <!-- <Navbar /> -->
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+// import Navbar from './components/Navbar.vue'
+// import Loginform from './components/Loginform.vue'
+// import RegisterForm from './components/Registerform.vue'
+import Accountstate from './components/Accountstate.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // Navbar,
+    Accountstate
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  #app {
+
+  }
+
+  .jumbotron {
+    padding: 32px !important;
+  }
+
+  h1 {
+    color: goldenrod;
+  }
+
 </style>
