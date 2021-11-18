@@ -1,0 +1,189 @@
+/* Usuarios */
+[
+    {
+      "name": "Alejo Garcia",
+      "age": 27,
+      "email": "alejogarcia@email.com",
+      "token": "8c150c48-9ca6-4413-a3c6-b0f1a4936b05",
+      "password": "kGHK56AxElJZQrN",
+      "userId": "8690cb36-cf22-461c-9304-434adcca9650",
+      "id": "1"
+    },
+    {
+      "name": "Tami Hoeger",
+      "age": 67995,
+      "email": "Zula_Kirlin@hotmail.com",
+      "token": "58aeed69-3aba-437f-b11e-7f94b0db3782",
+      "password": "W8TWkjVjjMgI3tW",
+      "userId": "74a83c2d-25bd-44e4-b2e7-e3db4564c5fe",
+      "id": "2"
+    }
+  ]
+  
+/* Cuentas */
+[
+    {
+      "createdAt": "2021-11-16T19:29:16.210Z",
+      "accountName": "Cuenta corriente en $",
+      "currency": "PES",
+      "accountId": "43202143",
+      "userId": "8690cb36-cf22-461c-9304-434adcca9650",
+      "accountNumber": "822356521",
+      "amount": "174760.20",
+      "id": "1"
+    },
+    {
+      "createdAt": "2021-11-16T15:27:59.755Z",
+      "accountName": "Caja de ahorro en $",
+      "currency": "PES",
+      "accountId": "52972290",
+      "userId": "8690cb36-cf22-461c-9304-434adcca9650",
+      "accountNumber": "725700850",
+      "amount": "13560.60",
+      "id": "2"
+    },
+    {
+      "createdAt": "2021-11-17T07:51:41.699Z",
+      "accountName": "Caja de ahorro en U$D",
+      "currency": "DOL",
+      "accountId": "53591870",
+      "userId": "8690cb36-cf22-461c-9304-434adcca9650",
+      "accountNumber": "306463891",
+      "amount": "25040.00",
+      "id": "3"
+    },
+    {
+      "createdAt": "2021-11-17T11:25:32.572Z",
+      "accountName": "Cuenta corriente en $",
+      "currency": "PES",
+      "accountId": "55173446",
+      "userId": "74a83c2d-25bd-44e4-b2e7-e3db4564c5fe",
+      "accountNumber": "011190226",
+      "amount": "12960.20",
+      "id": "4"
+    },
+    {
+      "createdAt": "2021-11-17T08:22:46.736Z",
+      "accountName": "Caja de ahorro en $",
+      "currency": "PES",
+      "accountId": "70898503",
+      "userId": "74a83c2d-25bd-44e4-b2e7-e3db4564c5fe",
+      "accountNumber": "199150227",
+      "amount": "140270.20",
+      "id": "5"
+    },
+    {
+      "createdAt": "2021-11-16T17:36:36.336Z",
+      "accountName": "Caja de ahorro en U$D",
+      "currency": "DOL",
+      "accountId": "61109366",
+      "userId": "74a83c2d-25bd-44e4-b2e7-e3db4564c5fe",
+      "accountNumber": "315465958",
+      "amount": "8395.00",
+      "id": "6"
+    }
+  ]
+
+/* Movimientos */
+  [
+    {
+     "createdAt": "2021-11-17 08:52",
+     "reason": "invoice transaction at Veum - Adams using card ending with ***9951 for BGN 625.40 in account ***52217435",
+     "reference": "Savings Account",
+     "type": "deposito",
+     "currency": "USD",
+     "accountOrigin": "53591870",
+     "amount": "722.07",
+     "accountTarget": "",
+     "id": "1"
+    },
+    {
+     "createdAt": "2021-11-16 15:24",
+     "reason": "payment transaction at Conroy",
+     "reference": "Money Market Account",
+     "type": "transferencia",
+     "currency": "USD",
+     "accountOrigin": "53591870",
+     "amount": "774.44",
+     "accountTarget": "61109366",
+     "id": "2"
+    },
+    {
+     "createdAt": "2021-11-17 12:00",
+     "reason": "deposit transaction at Schuster, Marquardt and Oberbrunner using card ending with ***0224 for TND 249.12 in account ***77099113",
+     "reference": "Auto Loan Account",
+     "type": "retiro",
+     "currency": "USD",
+     "accountOrigin": "53591870",
+     "amount": "902.90",
+     "accountTarget": "",
+     "id": "3"
+    },
+    {
+     "createdAt": "2021-11-17 08:30",
+     "reason": "deposit transaction at Wilderman Group using card ending with ***4832 for QAR 280.90 in account ***00900252",
+     "reference": "Money Market Account",
+     "type": "retiro",
+     "currency": "USD",
+     "accountOrigin": "53591870",
+     "amount": "794.55",
+     "accountTarget": "",
+     "id": "4"
+    },
+    {
+     "createdAt": "2021-11-17 11:05",
+     "reason": "withdrawal transaction",
+     "reference": "Personal Loan Account",
+     "type": "transferencia",
+     "currency": "USD",
+     "accountOrigin": "53591870",
+     "amount": "646.22",
+     "accountTarget": "61109366",
+     "id": "5"
+    },
+    {
+     "createdAt": "2021-11-16 21:51",
+     "reason": "transfer for market",
+     "reference": "Money Market Account",
+     "type": "transferencia",
+     "currency": "PES",
+     "accountOrigin": "52972290",
+     "amount": "708.33",
+     "accountTarget": "70898503",
+     "id": "6"
+    },
+    {
+     "createdAt": "2021-11-17 10:21",
+     "reason": "payment transaction at Zemlak, Okuneva and Johnson using card ending with ***8706 for HNL 975.02 in account ***38352249",
+     "reference": "Money Market Account",
+     "type": "retiro",
+     "currency": "PES",
+     "accountOrigin": "52972290",
+     "amount": "382.87",
+     "accountTarget": "",
+     "id": "7"
+    },
+    {
+     "createdAt": "2021-11-17 01:08",
+     "reason": "invoice transaction at Mayert and Sons using card ending with ***3850 for BWP 143.69 in account ***90568131",
+     "reference": "Home Loan Account",
+     "type": "transferencia",
+     "currency": "PES",
+     "accountOrigin": "52972290",
+     "amount": "245.20",
+     "accountTarget": "70898503",
+     "id": "8"
+    },
+    {
+     "createdAt": "2021-11-16 20:37",
+     "reason": "deposit transaction at Yundt - Schuster using card ending with ***1759 for LYD 310.22 in account ***97107962",
+     "reference": "Savings Account",
+     "type": "retiro",
+     "currency": "PES",
+     "accountOrigin": "52972290",
+     "amount": "673.45",
+     "accountTarget": "",
+     "id": "9"
+    }
+   ]
+  

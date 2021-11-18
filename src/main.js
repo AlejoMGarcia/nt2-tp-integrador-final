@@ -10,9 +10,16 @@ import { router } from './router'
 import './axios'
 import './form'
 
+import './globalFilters'
+
+import './globalMixins'
+
+import store from './store'
+
 Vue.config.productionTip = false
 
 new Vue({
   router,
+  store,
   render: h => h(App),
 }).$mount('#app')

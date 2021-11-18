@@ -18,6 +18,13 @@
               <a class="nav-link" href="#">Movimientos de Cuenta</a>
             </router-link>
           </li>
+
+          <li class="nav-item">
+            <router-link to="/transfer">
+              <a class="nav-link" href="#">Transferencias</a>
+            </router-link>
+          </li>
+          
         </ul>
       </div>
     </nav>

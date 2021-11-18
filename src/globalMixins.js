@@ -1,6 +1,6 @@
 import Vue from 'vue'
 
-export const miMixinGlobal = {
+export const globalMixin = {
     beforeMount() {
       
     },
@@ -8,8 +8,17 @@ export const miMixinGlobal = {
       
     },
     methods : {
-      
+        getSelectedAccount() {
+            let selectedAccount = this.$store.state.selectedAccount
+            return selectedAccount
+        },
+        accountWasSelected() {
+            return this.getSelectedAccount() != null
+        },
+    },
+    computed : {
+   
     }
 }
 
-Vue.mixin(miMixinGlobal)
+Vue.mixin(globalMixin)

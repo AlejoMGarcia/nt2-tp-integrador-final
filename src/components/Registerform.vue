@@ -117,8 +117,8 @@
             <option v-bind:value="{ text: 'uruguay' }">Uruguay</option>
           </select>
           
-          <field-messages name="gender">
-            <div v-if="completeGender" class="alert alert-danger mt-2">
+          <field-messages name="nationality">
+            <div v-if="completeNationality" class="alert alert-danger mt-2">
               El genero es requerido.
             </div>
             
@@ -184,6 +184,7 @@ import Datepicker from 'vuejs-datepicker';
         registerClientUrl: 'http://localhost:3000/register',
         peticion: false,
         completeGender: false,
+        completeNationality: false,
         minLength : 3,
         maxLength : 15,
         minAge : 18,
@@ -215,7 +216,6 @@ import Datepicker from 'vuejs-datepicker';
 
         try {
            let { data: respuesta } = await this.axios.post(this.registerClientUrl, this.formData, {'content-type':'application/json'});
-          console.log("AXIOS POST CLIENTE", respuesta);
           this.token = respuesta.token
           this.peticion = false
         }
@@ -231,13 +231,11 @@ import Datepicker from 'vuejs-datepicker';
           this.error = 'Las contraseñas no son iguales'
           validPassword = false
         }
-        console.log('validPassword ' + validPassword) 
         return validPassword
       },
       validateGender() {
         let validad = true
         if(!this.formData.gender) {
-          console.log(this.formData.gender)
           this.completeGender = true
           validad = false
         }
