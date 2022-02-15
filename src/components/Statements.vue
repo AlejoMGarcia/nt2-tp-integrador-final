@@ -4,7 +4,7 @@
 
 
     <h3 v-if="!accountWasSelected()" class="alert alert-warning mt-4">Debe seleccionar una cuenta</h3>
-    <h2 v-else class="mt-4" style="text-align-last:center">Movimiento de cuenta: {{ getSelectedAccount().accountName }}</h2>
+    <h2 v-else class="mt-4" style="text-align-last:center">Movimientos de la cuenta: {{ getSelectedAccount().accountName }}</h2>
     <br>
 
     <div v-if="disabledSpinner" class="spinner-border align-center mt-3" role="status">
@@ -19,7 +19,6 @@
             <small style="font-weight: bold;"> {{ statement.createdAt }} </small>
           </div>
           <p class="mb-1"> {{ statement.amount | currency(statement.currency) }} </p>
-          <!-- <small> {{  }} </small> -->
         </a>
       </div>      
     </div>
